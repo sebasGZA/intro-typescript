@@ -12,3 +12,5 @@ Inject values ${name}
 expression ${1 + 1}
 numbers ${age}
 booleans ${isValid}`;
+
+console.log(templateString);

@@ -1,11 +1,13 @@
-import { name, age, templateString } from "./bases/01-types";
+// import { name, age } from "./bases/01-types";
+import { pokemonIds, picachu, charmander } from "./bases/02-objects";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <h1>Vite + TypeScript</h1>
     <hr />
-    <h2>${name} ${age}</h2>
-    <h3>${templateString}</h3>
+    <h3>${pokemonIds.join(", ")}</h3>
+    <code>${JSON.stringify(picachu)}</code>
+    <code>${JSON.stringify(charmander)}</code>
   </div>
 `;
