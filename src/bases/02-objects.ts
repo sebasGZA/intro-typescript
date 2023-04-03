@@ -20,3 +20,8 @@ export const charmander: Pokemon = {
   id: 2,
   name: "Charmander",
 };
+
+export const pokemons: Pokemon[] = [];
+pokemons.push(charmander);
+pokemons.unshift(picachu);
+console.log({ pokemons });
