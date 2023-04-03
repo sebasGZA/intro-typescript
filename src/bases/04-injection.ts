@@ -30,3 +30,4 @@ export class Pokemon {
 
 const pokeApi = new PokeApiAdapter();
 export const charmander = new Pokemon(1, "charmander", pokeApi);
+charmander.getMoves();
