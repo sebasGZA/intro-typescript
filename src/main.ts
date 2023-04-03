@@ -8,5 +8,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <h1>Vite + TypeScript</h1>
     <hr />
     <h3>${JSON.stringify(charmander)}</h3>
+    <h4>${charmander.imageUrl}</h4>
   </div>
 `;

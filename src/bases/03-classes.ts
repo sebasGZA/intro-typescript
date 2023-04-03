@@ -10,8 +10,23 @@
 // }
 
 export class Pokemon {
+  get imageUrl(): string {
+    return `https://pokemon.com/${this.id}.jpg`;
+  }
+
   constructor(public readonly id: number, public name: string) {}
+
+  public scream(): void {
+    console.log(`${this.name.toUpperCase()}`);
+    this.speak();
+  }
+
+  private speak(): void {
+    console.log(`${this.name}, ${this.name}`);
+  }
 }
 
 export const charmander = new Pokemon(1, "charmander");
 console.log({ charmander });
+
+charmander.scream();
